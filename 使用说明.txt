@@ -1,0 +1,21 @@
+lab1：
+Socket Demo是老师给的一个实际例子，可以实时聊天，用处不大。
+实验内容在文件夹 code中
+code/file是用来传输的文件，可以认为是服务器上存储的文件。
+code/Server是实现的服务器程序的代码：用Visual Studio直接打开Server.sln文件
+Server.cpp文件中，开头定义了一个 String fileposition 这是定义的file文件夹所在路径，
+并且将file文件夹视为服务器的根目录，用户只能访问file文件夹及其下面的子文件夹。
+
+lab2
+这是windows版本的实验文件，linux下的实验文件这里没有包括
+rdt-win-student是实验的内容
+StopWait 停等协议为老师给出的实例，需要实现GBN SR 以及一个简化的TCP协议
+lib文件夹存放的是 实现以上四个协议所需要的一个库，没有引用这个库在编译时会报错
+在每一个协议的stdafx.h中用pragma comment ()引用了这个库。
+每一个协议的Debug文件夹中有一个 check_win.bat这是实验检查脚本，
+该脚本会调用生成的程序十次，然后比较input.txt 与output.txt，如果十次传输的结果都是一致的，那么协议的实现就是正确的
+result.txt 是传输过程的信息。
+
+lab3
+cisco文件夹是实现的实验内容，按照实验的内容，依次编号，具体对应关系标注在”基于CPT的组网实验.pdf“中
+PacketTracer6_DownZa.Cn是 CPT汉化软件包
